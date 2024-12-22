@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #e1e6ff;
+}
+
+.Sign-up {
+    text-align: center;
+    border-radius: 12px;
+    padding: 18px; /* Adjusted padding for responsiveness */
+    width: 90%; /* Full width on small screens */
+    max-width: 400px; /* Restricts the max width on larger screens */
+    border: none;
+}
+
+button {
+    width: 100%; /* Adjusted to fit the parent width */
+    border-radius: 8px;
+    padding: 18px;
+    background-color: #5169e3;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #182042;
+    color: white;
+}
+
+input {
+    width: 90%; /* Matches parent width */
+    margin: 10px 0;
+    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.signIn {
+    margin-top: 20px; /* Reduced for better alignment */
+}
+
+a {
+    text-decoration: none;
+    color: #5cadf4;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .Sign-up {
+        padding: 30px;
+        width: 80%;
+    }
+    button {
+        padding: 18px;
+        font-size: 18px;
+    }
+    input {
+        padding: 14px;
+        font-size: 16px;
+    }
+}
+
+/* Laptop and Desktop */
+@media (min-width: 1200px) {
+    .Sign-up {
+        width: 50%;
+        padding: 40px;
+    }
+    button {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
