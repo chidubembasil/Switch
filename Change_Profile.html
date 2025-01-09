@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Profile</title>
+    <link rel="stylesheet" href="Change_Profile(style).css">
+</head>
+<script>
+    const loadFile = event => {
+        const image = document.getElementById('profile-image');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script>
+<body>
+    <div class="profile-container">
+        <h2>Create New Profile</h2>
+        <div class="image-upload">
+            <div class="image-circle">
+                <img id="profile-image" src="#" alt="Profile" />
+            </div>
+            <label for="file-upload" class="file-label">Upload</label>
+            <input type="file" id="file-upload" accept="image/*" onchange="loadFile(event)">
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="username">Username*</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="display-name">Display Name*</label>
+                <input type="text" id="display-name" placeholder="Enter display name" required>
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio on Profile*</label>
+                <textarea id="bio" placeholder="Write a bio..." maxlength="80"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="interests">Select your interests*</label>
+                <select id="interests">
+                    <option value="design">Design</option>
+                    <option value="coding">Coding</option>
+                    <option value="art">Art</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="location">Select your location*</label>
+                <input type="text" id="location" placeholder="Enter your location">
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    
+</body>
+</html>
