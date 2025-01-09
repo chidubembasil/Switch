@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #e1e6ff;
+}
+
+/*This affects the whole section under sign-in i.e from h1 to SignUp*/
+.sign-in {
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px; 
+    width: 90%; /* Full width on small screens */
+    max-width: 400px; /* Better maximum width for responsiveness */
+}
+    
+/*This affects the (forget passowrd?)*/
+form a {
+    display: block; 
+    text-align: right;
+    margin: 10px 0;
+    color: #5cadf4;
+    margin-right: 25px;
+}
+
+/* Sign In button */
+button {
+    width: 85%;
+    border-radius: 8px;
+    padding: 18px;
+    background-color: #5169e3;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #182042;
+    color: white;
+}
+
+
+/*This affects the sign-in form*/
+input {
+    width: 85%; 
+    margin: 10px 0;
+    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    
+}
+
+/*This affects the everything under the button i.e both Don't have an account and Sign Up*/
+.bottom {
+    margin-top: 20px;
+}
+
+/*This affects every link both (forgot password) and Sign Up*/
+a {
+    text-decoration: none;
+    color: #5cadf4;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .sign-in {
+        padding: 30px;
+        width: 80%;
+    }
+    button {
+        padding: 18px;
+        font-size: 18px;
+    }
+    input {
+        padding: 14px;
+        font-size: 16px;
+    }
+}
+
+/* Laptop and Desktop */
+@media (min-width: 1200px) {
+    .sign-in {
+        width: 50%;
+        padding: 40px;
+    }
+    button {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
